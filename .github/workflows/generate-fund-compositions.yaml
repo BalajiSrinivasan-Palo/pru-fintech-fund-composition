@@ -1,7 +1,7 @@
 name: Generate Fund Compositions Artifact
 
 on:
-  workflow_dispatch: # Allows manual triggering of the action
+  workflow_dispatch:
     inputs:
       date:
         description: "Date for the artifact (format: YYYY-MM-DD). Defaults to today."
@@ -11,18 +11,42 @@ on:
 jobs:
   generate-fund-compositions:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate fund compositions artifact
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Generate fund compositions
         run: |
           mkdir -p artifacts
           python generate_fund_compositions.py "${{ github.event.inputs.date }}"
+          DATE=$(date +'%Y-%m-%d')
+          cp artifacts/fund_compositions.json "artifacts/fund_compositions_${DATE}.json"
 
-      - name: Upload artifact
+      - name: Commit and push
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add artifacts/fund_compositions.json
+          git add artifacts/fund_compositions_*.json
+          git commit -m "Update fund compositions for $(date +'%Y-%m-%d')"
+          git push origin main
+
+      - name: Upload current composition
         uses: actions/upload-artifact@v3
         with:
-          name: fund-compositions-artifact-${{ github.run_id }}
+          name: fund-compositions
           path: artifacts/fund_compositions.json
+
+      - name: Upload dated composition
+        uses: actions/upload-artifact@v3
+        with:
+          name: fund-compositions-dated
+          path: artifacts/fund_compositions_*.json

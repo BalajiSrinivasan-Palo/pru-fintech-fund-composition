@@ -1,0 +1,57 @@
+{
+    "date": "",
+    "fund_compositions": [
+        {
+            "name": "Fund A",
+            "positions": [
+                {
+                    "ticker": "JPM",
+                    "proportion": 0.71
+                },
+                {
+                    "ticker": "AAPL",
+                    "proportion": 0.17
+                },
+                {
+                    "ticker": "TSLA",
+                    "proportion": 0.12
+                }
+            ]
+        },
+        {
+            "name": "Fund B",
+            "positions": [
+                {
+                    "ticker": "AMZN",
+                    "proportion": 0.84
+                },
+                {
+                    "ticker": "MSFT",
+                    "proportion": 0.16
+                }
+            ]
+        },
+        {
+            "name": "Fund C",
+            "positions": [
+                {
+                    "ticker": "AMZN",
+                    "proportion": 0.45
+                },
+                {
+                    "ticker": "TSLA",
+                    "proportion": 0.55
+                }
+            ]
+        },
+        {
+            "name": "Fund D",
+            "positions": [
+                {
+                    "ticker": "COP",
+                    "proportion": 1.0
+                }
+            ]
+        }
+    ]
+}

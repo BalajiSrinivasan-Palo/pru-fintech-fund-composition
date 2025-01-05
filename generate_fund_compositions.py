@@ -4,7 +4,7 @@ from datetime import datetime
 import sys
 
 # Fixed tickers for fund composition
-all_tickers = ["RELIANCE.BSE", "GPV.TRV", "IBM", "SHOP.TRT"]
+all_tickers = ["SHOP.TRT","RELIANCE.BSE", "GPV.TRV", "IBM"]
 # Generate random proportions for each fund
 def generate_fund_compositions(fund_names, date):
     compositions = {

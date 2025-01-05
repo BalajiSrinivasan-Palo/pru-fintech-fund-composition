@@ -4,8 +4,7 @@ from datetime import datetime
 import sys
 
 # Fixed tickers for fund composition
-all_tickers = ["AAPL", "GOOG", "MSFT", "AMZN", "TSLA", "NVDA", "JPM", "BAC", "V", "XOM", "CVX", "COP"]
-
+all_tickers = ["RELIANCE.BSE", "GPV.TRV", "IBM", "SHOP.TRT"]
 # Generate random proportions for each fund
 def generate_fund_compositions(fund_names, date):
     compositions = {
@@ -45,7 +44,7 @@ if __name__ == "__main__":
     input_date = sys.argv[1] if len(sys.argv) > 1 else datetime.now().strftime("%Y-%m-%d")
     
     # Predefined fund names
-    fund_names = ["Fund A", "Fund B", "Fund C", "Fund D"]
+    fund_names = ["Fund A", "Fund B"]
     
     # Generate compositions
     fund_compositions = generate_fund_compositions(fund_names, input_date)

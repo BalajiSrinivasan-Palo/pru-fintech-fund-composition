@@ -14,6 +14,11 @@ def generate_fund_compositions(fund_names, date):
         proportions = [random.random() for _ in all_tickers]
         total = sum(proportions)
         normalized_proportions = [round(p / total, 2) for p in proportions]
+        
+        # Adjust the last proportion to ensure the sum is exactly 1
+        difference = 1 - sum(normalized_proportions[:-1])
+        normalized_proportions[-1] = round(difference, 2)
+        
         compositions[fund] = {
             "date": date,
             "positions": [

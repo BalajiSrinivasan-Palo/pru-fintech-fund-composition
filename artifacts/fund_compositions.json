@@ -1,31 +1,44 @@
 {
-    "date": "",
-    "fund_compositions": [
-        {
-            "name": "Fund A",
-            "positions": [
-                {
-                    "ticker": "RELIANCE.BSE",
-                    "proportion": 1.0
-                }
-            ]
-        },
-        {
-            "name": "Fund B",
-            "positions": [
-                {
-                    "ticker": "SHOP.TRT",
-                    "proportion": 0.14
-                },
-                {
-                    "ticker": "GPV.TRV",
-                    "proportion": 0.67
-                },
-                {
-                    "ticker": "RELIANCE.BSE",
-                    "proportion": 0.2
-                }
-            ]
-        }
-    ]
+    "Fund A": {
+        "date": "2025-01-05",
+        "positions": [
+            {
+                "ticker": "SHOP.TRT",
+                "proportion": 0.24
+            },
+            {
+                "ticker": "RELIANCE.BSE",
+                "proportion": 0.28
+            },
+            {
+                "ticker": "GPV.TRV",
+                "proportion": 0.2
+            },
+            {
+                "ticker": "IBM",
+                "proportion": 0.28
+            }
+        ]
+    },
+    "Fund B": {
+        "date": "2025-01-05",
+        "positions": [
+            {
+                "ticker": "SHOP.TRT",
+                "proportion": 0.12
+            },
+            {
+                "ticker": "RELIANCE.BSE",
+                "proportion": 0.2
+            },
+            {
+                "ticker": "GPV.TRV",
+                "proportion": 0.4
+            },
+            {
+                "ticker": "IBM",
+                "proportion": 0.29
+            }
+        ]
+    }
 }

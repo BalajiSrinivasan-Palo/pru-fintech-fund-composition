@@ -29,7 +29,7 @@ def generate_fund_compositions(fund_names, date):
     return compositions
 
 # Example usage
-fund_names = ["Fund A", "Fund B", "Fund C"]
+fund_names = ["Fund A", "Fund B"]
 date = datetime.now().strftime("%Y-%m-%d")
 fund_compositions = generate_fund_compositions(fund_names, date)
 

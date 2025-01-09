@@ -4,19 +4,19 @@
         "positions": [
             {
                 "ticker": "SHOP.TRT",
-                "proportion": 0.33
+                "proportion": 0.58
             },
             {
                 "ticker": "RELIANCE.BSE",
-                "proportion": 0.12
+                "proportion": 0.14
             },
             {
                 "ticker": "GPV.TRV",
-                "proportion": 0.07
+                "proportion": 0.25
             },
             {
                 "ticker": "IBM",
-                "proportion": 0.48
+                "proportion": 0.03
             }
         ]
     },
@@ -25,40 +25,19 @@
         "positions": [
             {
                 "ticker": "SHOP.TRT",
-                "proportion": 0.41
+                "proportion": 0.06
             },
             {
                 "ticker": "RELIANCE.BSE",
-                "proportion": 0.18
-            },
-            {
-                "ticker": "GPV.TRV",
-                "proportion": 0.2
-            },
-            {
-                "ticker": "IBM",
-                "proportion": 0.21
-            }
-        ]
-    },
-    "Fund C": {
-        "date": "2025-01-09",
-        "positions": [
-            {
-                "ticker": "SHOP.TRT",
-                "proportion": 0.19
-            },
-            {
-                "ticker": "RELIANCE.BSE",
-                "proportion": 0.27
-            },
-            {
-                "ticker": "GPV.TRV",
                 "proportion": 0.41
             },
             {
+                "ticker": "GPV.TRV",
+                "proportion": 0.05
+            },
+            {
                 "ticker": "IBM",
-                "proportion": 0.13
+                "proportion": 0.48
             }
         ]
     }
